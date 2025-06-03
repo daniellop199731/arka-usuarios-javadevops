@@ -15,14 +15,14 @@ public class ResponseObject {
 
     private Object obj;
 
-    public void setSuccessfully(String message, Object obj){
-        this.successfully = true;
-        this.message = message;
-        this.obj = obj;
+    public void setAsSuccessfully(String message, Object obj){
+        this.setSuccessfully(true);
+        this.setMessage(message);
+        this.setObj(obj);
     }
 
-    public void setNoSuccessfuly(String message){
-        this.successfully = false;
+    public void setAsNoSuccessfuly(String message){
+        this.setSuccessfully(false);
         this.message = message;
     }
 }
