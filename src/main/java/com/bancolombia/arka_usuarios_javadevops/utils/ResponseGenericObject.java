@@ -14,7 +14,7 @@ public class ResponseGenericObject<T>{
     private T obj;
 
     public void setAsSuccesfuly(String message, T obj){
-        this.isSuccessfuly();
+        this.setSuccessfuly(true);
         this.setMessage(message);
         this.setObj(obj);
     }
